@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Machine Learning Codes:"
+code=`ls */* | grep -E ".*/.*py$" | cut -d/ -f2 | sort`
+for c in $code; do
+  echo '   ' $c
+done
